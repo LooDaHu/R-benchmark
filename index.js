@@ -22,7 +22,7 @@ try {
 
 
 function installDependencies() {
-    shell.exec('sudo apt-get install build-essential libcurl4-openssl-dev libcurl4-gnutls-dev libxml2-dev libssl-dev');
+    shell.exec('sudo apt-get install build-essential libcurl4-openssl-dev libxml2-dev libssl-dev');
 }
 
 function installR() {
