@@ -1,1 +1,0 @@
-sudo apt-get install build-essential libcurl4-gnutls-dev libxml2-dev libssl-dev

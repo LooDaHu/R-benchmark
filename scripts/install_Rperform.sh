@@ -1,1 +1,0 @@
-sudo R -e 'install.packages("devtools");devtools::install_github("LooDaHu/Rperform");devtools::install_dev_deps();Rperform::run_all_test(num_commits=1);q()'
