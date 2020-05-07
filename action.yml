@@ -1,13 +1,13 @@
 name: 'r-benchmark'
 description: 'Greet someone and record the time'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
-    required: false
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we we greeted you'
+  username:  # Github username
+    description: 'Your Github username. ex.LooDaHu'
+    required: True
+  commit: # Number of commit
+    description: 'The number of commit will be timing'
+    required: False
+    default: "1"
 runs:
   using: 'node12'
   main: 'index.js'
