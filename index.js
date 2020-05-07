@@ -35,8 +35,8 @@ function Rperform(commitNum) {
 }
 
 function updateResult(username) {
-  shell.exec('git config --global user.name \'LooDaHu\'');
-  shell.exec('git config --global user.email \'LooDaHu@users.noreply.github.com\'');
+  shell.exec('git config --global user.name \''+ username+ '\'');
+  shell.exec('git config --global user.email \''+username+'@users.noreply.github.com\'');
   shell.exec('git add Rperform_Data/');
   shell.exec('git commit -m "Benchmark Result Update"');
   shell.exec('git push');
