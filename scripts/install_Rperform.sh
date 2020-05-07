@@ -1,0 +1,1 @@
+sudo R -e 'install.packages("devtools");devtools::install_github("LooDaHu/Rperform");devtools::install_dev_deps();
