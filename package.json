@@ -20,6 +20,7 @@
   "dependencies": {
     "@actions/core": "^1.1.0",
     "@actions/github": "^1.1.0",
+    "glob": "^7.1.6",
     "shelljs": "^0.8.4"
   }
 }

@@ -13,7 +13,7 @@ try {
   const payload = JSON.stringify(github.context.payload, undefined, 2)
   console.log(`The event payload: ${payload}`);
 
-  shell.exec('../scripts/test')
+  shell.exec('sudo bash ./scripts/test.sh')
 } catch (error) {
   core.setFailed(error.message);
 }
