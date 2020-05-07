@@ -16,6 +16,7 @@ try {
     shell.exec('sudo bash ./scripts/install_dpnd.sh')
     shell.exec('sudo bash ./scripts/install_R.sh')
     shell.exec('sudo bash ./scripts/install_Rperform.sh')
+    shell.exec('sudo bash ./scripts/update_result.sh')
 } catch (error) {
     core.setFailed(error.message);
 }
