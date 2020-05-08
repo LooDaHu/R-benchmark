@@ -1,8 +1,15 @@
-# Hello world JavaScript action
+# R benchmark
 
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log. To learn how this action was built, see "[Creating a JavaScript action](https://help.github.com/en/articles/creating-a-javascript-action)" in the GitHub Help documentation.
+This action helps you timing the run-time of your R code, and save the timing result in your repository. 
 
-## Inputs
+## Prerequisite
+
+`Testthat` for R is required to use this action, you should have testing scripts in your `root_dir/tests/testthat` folder. And this action runs all test scripts in that folder.
+
+Note: If you are new to R testing and testthat, please check [Unit Testing for R testthat.](https://testthat.r-lib.org/)
+
+## How to use
+
 
 ### `who-to-greet`
 
