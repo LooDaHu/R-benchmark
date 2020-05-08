@@ -1,6 +1,6 @@
 # R benchmark
 
-This action helps you timing the run-time of your R code, and save the timing result in your repository. 
+This action helps you timing the run-time of your R code, and saves the timing result in your repository. 
 
 ## Prerequisite
 
@@ -11,7 +11,12 @@ Note: If you are new to R testing and testthat, please check [Unit Testing for R
 ## How to use
 
 
-### `who-to-greet`
+### `Set up a workflow`
+
+1. Click [Action button](./readme_pics/action_button.JPG) at the top your repository page.
+2. Click `set up a workflow yourself` which is highlighted in this figure.[set-up link](./readme_pics/set_up_link.JPG)  
+
+
 
 **Required** The name of the person to greet. Default `"World"`.
 
