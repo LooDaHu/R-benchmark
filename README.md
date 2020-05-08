@@ -30,9 +30,21 @@ Note: If you are new to R testing and testthat, please check [Unit Testing for R
 ### `Get the result`
 The result dataset should be at `root_dir/Rpeform_Data`.
 [Here](https://github.com/LooDaHu/PeakSegDisk/blob/master/Rperform_Data/PeakSegDisk_Result.csv) is a example result dataset for [`Initialization`](#initialization). 
-|"test_num"|"test_name"|"metric_name"|"status"|"metric_val"|"commit_message"|"commit_SHA"|"commit_date"|"benchmark_date"|"benchmark_most_recent_SHA"|
+|test_num|test_name|metric_name|status|metric_val|commit_message|commit_SHA|commit_date|benchmark_date|benchmark_most_recent_SHA|
 |---|---|---|---|---|---|---|---|---|---|
-1|"fread.last works with bad path"|"runtime (in seconds)"|"Pass"|0.0104406|"docs link break"|"13ecc3c46463515a4cfd33119bc797b7e462ade8"|2019-12-09 16:58:50|2020-05-07 21:47:35|"5434856e85618471ae22ceb1bb0a4ea5a7f9a234"
+|1|"fread.last works with bad path"|"runtime (in seconds)"|"Pass"|0.0104406|"docs link break"|"13ecc3c46463515a4cfd33119bc797b7e462ade8"|2019-12-09 16:58:50|2020-05-07 21:47:35|"5434856e85618471ae22ceb1bb0a4ea5a7f9a234"|
+
+#### Explain of colunms:
+`test_num`: The workflow will run each test 3 times. 1 here means this is the first time of three tests. <br>
+`test_name`: The name of the test. And this name should be specified at your test script. <br>
+`metrics_name`: The name of metrics, Here is runtimme in seconds. <br>
+`status`: The status of tests, "Pass", if all good, "Fail" if error happens. <br>
+`metric_val`: The result value of metrics, 0.0104406 means 0.0104406 seconds. <br>
+`commmit_message`: The commit message of this tested commit. <br> 
+`commit_SHA`: The SHA of this tested commit.<br>
+`commit_date`: The date time when this commit is commited. <br>
+`benchmark_date`: The date time when commit is timing. <br>
+`benchmark_most_recent_SHA`: The SHA of the head. <br>
 
 ## :pencil: Example usage
 ### Initialization:
@@ -89,3 +101,6 @@ jobs:
         username: <GitHub_username>(Requried) # Replace it with your Github username.
 # A timing result of current pushed commit will be added into the result dataset once changes happen at non-ignored directories.    
 ```
+
+## :rainbow: Speical thanks
+Thanks for [Dr.Toby Hocking](https://github.com/tdhock)'s help and advice to make this project completed.
