@@ -1,4 +1,4 @@
-# R benchmark
+# R benchmark ![CI](https://github.com/LooDaHu/R-benchmark/workflows/CI/badge.svg)
 
 This action helps you timing the run-time of your R code, and saves the timing result in your repository. 
 
