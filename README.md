@@ -17,7 +17,7 @@ Note: If you are new to R testing and testthat, please check [Unit Testing for R
 
 2. Click `set up a workflow yourself` which is highlighted in this figure.![set-up link](./readme_pics/set_up_link.JPG)  
 
-3. Copy [Example usage](<Example usage>) into the editor then commit it.
+3. Copy the [example usage](#example-usage) into the editor then commit it.
 
 
 ### `Get the result`
