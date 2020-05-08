@@ -1,5 +1,5 @@
-name: 'r-benchmark'
-description: 'Greet someone and record the time'
+name: 'R-benchmark'
+description: 'This action helps you timing the run-time of your R code, and saves the timing result in your repository.'
 inputs:
   username:  # Github username
     description: 'Your Github username. ex.LooDaHu'
@@ -8,6 +8,9 @@ inputs:
     description: 'The number of commit will be timing'
     required: False
     default: "1"
+branding:
+  icon: 'activity'
+  color: 'orange'
 runs:
   using: 'node12'
   main: 'index.js'
