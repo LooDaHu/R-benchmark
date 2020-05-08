@@ -19,9 +19,9 @@ Note: If you are new to R testing and testthat, please check [Unit Testing for R
 
 3. Copy the [example usage](#pencil-example-usage) into the editor.
 
-4. If you already have serveral commits in your repository. And You think it is meaningful to timing those commits, you can use [`Initalization`](#initalization) for a start.
+4. If you already have serveral commits which you want to timing in your repository, you can use [`Initalization`](#initalization) for a start. Or, you can use [`Normal`](#normal) directly.
 
-
+5. Replace `<Github_username>` to your Github username, for example, LooDaHu. And aslo, replace `<number of commits>` to the number of existed commits you want to timing.
 
 
 
