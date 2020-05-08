@@ -8,14 +8,16 @@ This action helps you timing the run-time of your R code, and saves the timing r
 
 Note: If you are new to R testing and testthat, please check [Unit Testing for R, testthat.](https://testthat.r-lib.org/)
 
-## How to use
+## :pencil2: How to use
 
 
 ### `Set up a workflow`
 
-1. Click [Action button](./readme_pics/action_button.JPG) at the top your repository page.
-2. Click `set up a workflow yourself` which is highlighted in this figure.[set-up link](./readme_pics/set_up_link.JPG)  
+1. Click ![Action button](./readme_pics/action_button.JPG) at the top your repository page.
 
+2. Click `set up a workflow yourself` which is highlighted in this figure.![set-up link](./readme_pics/set_up_link.JPG)  
+
+3. Copy [Example usage](#Example usage) into the editor then commit it.
 
 
 **Required** The name of the person to greet. Default `"World"`.
