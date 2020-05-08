@@ -25,11 +25,14 @@ Note: If you are new to R testing and testthat, please check [Unit Testing for R
 
 6. ![Commit_button](./readme_pics/commit_button.JPG), once you done.
 
-7. Don't forget change you workflow to [`Normal`](#normal) if you choose [`Initialization`](#initialization) as a start.
+7. Don't forget change you workflow to [`Normal`](#normal) at `root_dir/.github/workflows` if you choose [`Initialization`](#initialization) as a start.
 
 ### `Get the result`
-
-
+The result dataset should be at `root_dir/Rpeform_Data`.
+[Here](https://github.com/LooDaHu/PeakSegDisk/blob/master/Rperform_Data/PeakSegDisk_Result.csv) is a example result dataset for [`Initialization`](#initialization). 
+|"test_num"|"test_name"|"metric_name"|"status"|"metric_val"|"commit_message"|"commit_SHA"|"commit_date"|"benchmark_date"|"benchmark_most_recent_SHA"|
+|---|---|---|---|---|---|---|---|---|---|
+1|"fread.last works with bad path"|"runtime (in seconds)"|"Pass"|0.0104406|"docs link break"|"13ecc3c46463515a4cfd33119bc797b7e462ade8"|2019-12-09 16:58:50|2020-05-07 21:47:35|"5434856e85618471ae22ceb1bb0a4ea5a7f9a234"
 
 ## :pencil: Example usage
 ### Initialization:
