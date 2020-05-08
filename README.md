@@ -19,69 +19,56 @@ Note: If you are new to R testing and testthat, please check [Unit Testing for R
 
 3. Copy the [example usage](#pencil-example-usage) into the editor.
 
-4. If you already have serveral commits which you want to timing in your repository, you can use [`Initalization`](#initalization) for a start. Or, you can use [`Normal`](#normal) directly.
+4. If you already have several commits which you want to timing in your repository, you can use [`Initialization`](#initialization) for a start. Or, you can use [`Normal`](#normal) directly.
 
-5. Replace `<Github_username>` to your Github username, for example, LooDaHu. And aslo, replace `<number of commits>` to the number of existed commits you want to timing.
+5. Replace `<Github_username>` with your Github username, for example, LooDaHu. And also, replace `<number of commits>` with the number of existed commits you want to timing.
 
+6. ![Commit_button](./readme_pics/commit_button.JPG), once you done.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+7. Don't forget change you workflow to [`Normal`](#normal) if you choose [`Initialization`](#initialization) as a start.
 
 ### `Get the result`
 
-## :pencil: Example usage
-### Initalization:
-```yaml
-name: R-benchmark
 
-on:
+
+## :pencil: Example usage
+### Initialization:
+```yaml
+name: R-benchmark # The name of this workflow
+
+# The condition of toggling this workflow. For this workflow, it will be toggled when push or pull request happens at master branch.
+on:  
   push:
-    branches: [ master ]
-    paths-ignore: 
-      - '.github/workflows/**'
-      - 'Rperform_Data/**'
+    branches: [ master ] 
   pull_request:
     branches: [ master ]
-    paths-ignore: 
-      - '.github/workflows/**'
-      - 'Rperform_Data/**'
 
 jobs:
   benchmark:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2 # Checkout@v2 is a Github official workflow that can checkout your repo on VM.
       with:
-        fetch-depth: 0
+        fetch-depth: 0 # will fetch all commits in history in the repo.
     - name: r-benchmark
       uses: LooDaHu/R-benchmark@v1
       with:
-        username: <GitHub_username>: Required
-        commit: <number of commits>: Optional
+        username: <GitHub_username>(Required) # Replace it with your Github username.
+        commit: <number of commits>(Optional) # Replace it with the number of existing commits from the head you want to timing.
+# A timing result dataset will be produced once this workflow is committed.
 ```
 
 ### Normal:
 ```yaml
 name: R-benchmark
 
+# The condition of toggling this workflow. For this workflow, it will be toggled when push or pull request happens at master branch.
 on:
   push:
     branches: [ master ]
-    paths-ignore: 
-      - '.github/workflows/**'
-      - 'Rperform_Data/**'
+    paths-ignore: # the ignored path for toggling.
+      - '.github/workflows/**' # Changes in workflow files will not toggle this action
+      - 'Rperform_Data/**' # Changes in result data will not toggle this action
   pull_request:
     branches: [ master ]
     paths-ignore: 
@@ -92,11 +79,10 @@ jobs:
   benchmark:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
+    - uses: actions/checkout@v2 # Checkout@v2 is a Github official workflow that can checkout your repo on VM.
     - name: r-benchmark
       uses: LooDaHu/R-benchmark@v1
       with:
-        username: <GitHub_username>: Requried
+        username: <GitHub_username>(Requried) # Replace it with your Github username.
+# A timing result of current pushed commit will be added into the result dataset once changes happen at non-ignored directories.    
 ```
