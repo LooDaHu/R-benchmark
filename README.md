@@ -37,6 +37,7 @@ on:
   push:
     branches: [ master ]
     paths-ignore: 
+      - '.github/workflows/**'
       - 'Rperform_Data/**'
   pull_request:
     branches: [ master ]
