@@ -20,13 +20,7 @@ Note: If you are new to R testing and testthat, please check [Unit Testing for R
 3. Copy [Example usage](<Example usage>) into the editor then commit it.
 
 
-**Required** The name of the person to greet. Default `"World"`.
-
-## Outputs
-
-### `time`
-
-The time we greeted you.
+### `Get the result`
 
 ## :pencil: Example usage
 
