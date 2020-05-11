@@ -34,6 +34,10 @@ The result dataset should be at `root_dir/Rpeform_Data`.
 |---|---|---|---|---|---|---|---|---|---|
 |1|"fread.last works with bad path"|"runtime (in seconds)"|"Pass"|0.0104406|"docs link break"|"13ecc3c46463515a4cfd33119bc797b7e462ade8"|2019-12-09 16:58:50|2020-05-07 21:47:35|"5434856e85618471ae22ceb1bb0a4ea5a7f9a234"|
 
+### `Video`
+[Here](https://www.youtube.com/watch?v=4L5zIt7bPYY&list=PLJIfATvH6XAhcXBZjqKzgU54E-GWAV8lh) are serval videos to show how to use.
+
+
 #### Explain of colunms:
 `test_num`: The workflow will run each test 3 times. 1 here means this is the first time of three tests. <br>
 `test_name`: The name of the test. And this name should be specified at your test script. <br>
@@ -51,7 +55,7 @@ The result dataset should be at `root_dir/Rpeform_Data`.
 ```yaml
 name: R-benchmark # The name of this workflow
 
-# The condition of toggling this workflow. For this workflow, it will be toggled when push or pull request happens at master branch.
+# The condition of triggering this workflow. For this workflow, it will be triggered when push or pull request happens at master branch.
 on:  
   push:
     branches: [ master ] 
@@ -77,13 +81,13 @@ jobs:
 ```yaml
 name: R-benchmark
 
-# The condition of toggling this workflow. For this workflow, it will be toggled when push or pull request happens at master branch.
+# The condition of triggering this workflow. For this workflow, it will be triggered when push or pull request happens at master branch.
 on:
   push:
     branches: [ master ]
-    paths-ignore: # the ignored path for toggling.
-      - '.github/workflows/**' # Changes in workflow files will not toggle this action
-      - 'Rperform_Data/**' # Changes in result data will not toggle this action
+    paths-ignore: # the ignored path for triggering.
+      - '.github/workflows/**' # Changes in workflow files will not trigger this action
+      - 'Rperform_Data/**' # Changes in result data will not trigger this action
   pull_request:
     branches: [ master ]
     paths-ignore: 
@@ -102,5 +106,5 @@ jobs:
 # A timing result of current pushed commit will be added into the result dataset once changes happen at non-ignored directories.    
 ```
 
-## :rainbow: Speical thanks
+## :tada: Speical thanks
 Thanks for [Dr.Toby Hocking](https://github.com/tdhock)'s help and advice to make this project completed.
