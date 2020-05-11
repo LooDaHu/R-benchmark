@@ -49,6 +49,15 @@ The result dataset should be at `root_dir/Rpeform_Data`.
 ### :tv: `Video`
 [Here](https://www.youtube.com/watch?v=4L5zIt7bPYY&list=PLJIfATvH6XAhcXBZjqKzgU54E-GWAV8lh) are several videos to show how to use.
 
+### :file_folder: [`Demo Repo, LooDaHu/stingr`](https://github.com/LooDaHu/stringr)
+Demo Repo demonstrates the initialization with 5 commits, 3 pushes after the initialization.<br>
+The ['dataset'](https://github.com/LooDaHu/stringr/commit/bd427e9a4c3df432fa36a7eceddbadef32a4156d) after the initaliztion with 5 commits.
+
+The ['dataset'](https://github.com/LooDaHu/stringr/commit/d9d7a1659c7bcbbc9ec2ec7369a7f83c6dc044d2) after the 1st push.
+
+The ['dataset'](https://github.com/LooDaHu/stringr/commit/edbbb2514af6e24412172b403c7dc00f537fbd87) after the 2nd push.
+
+The ['dataset'](https://github.com/LooDaHu/stringr/commit/d822b3eb921d2fad60f5489379b2fbbf6e0e6cb6) after the 3rd push.
 ## :pencil: Example usage
 ### Initialization:
 ```yaml
