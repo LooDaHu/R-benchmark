@@ -36,7 +36,7 @@ The result dataset should be at `root_dir/Rpeform_Data`.
 
 #### Explain of colunms:
 `test_num`: The workflow will run each test 3 times. 1 here means this is the first time of three tests. <br>
-`test_name`: The name of the test. And this name should be specified at your test script. <br>
+`test_name`: The name of the test cases or test script files. <br>
 `metrics_name`: The name of metrics, Here is runtimme in seconds. <br>
 `status`: The status of tests, "Pass", if all good, "Fail" if error happens. <br>
 `metric_val`: The result value of metrics, 0.0104406 means 0.0104406 seconds. <br>
