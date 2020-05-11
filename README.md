@@ -35,7 +35,7 @@ The result dataset should be at `root_dir/Rpeform_Data`.
 |1|"fread.last works with bad path"|"runtime (in seconds)"|"Pass"|0.0104406|"docs link break"|"13ecc3c46463515a4cfd33119bc797b7e462ade8"|2019-12-09 16:58:50|2020-05-07 21:47:35|"5434856e85618471ae22ceb1bb0a4ea5a7f9a234"|
 
 ### `Video`
-[Here](https://www.youtube.com/watch?v=4L5zIt7bPYY&list=PLJIfATvH6XAhcXBZjqKzgU54E-GWAV8lh) are serval videos to show how to use.
+[Here](https://www.youtube.com/watch?v=4L5zIt7bPYY&list=PLJIfATvH6XAhcXBZjqKzgU54E-GWAV8lh) are several videos to show how to use.
 
 
 #### Explain of colunms:
